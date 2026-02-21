@@ -12,7 +12,8 @@ body {
     height: 80vh;
 }
 
-.top-banner img {
+.top-banner img,
+.top-banner video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -32,6 +33,7 @@ body {
     font-weight: 300;
     letter-spacing: 3px;
 }
+
 
 .top-text p {
     margin-top: 1rem;
@@ -94,21 +96,28 @@ body {
 }
 
 .product-card {
-    background: white;
-    padding: 2rem;
     position: relative;
     transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-card:hover {
     transform: translateY(-6px);
 }
 
+.product-card video {
+    width: 100%;
+    height: auto;
+
+}
+
 .product-card img {
     width: 100%;
-    height: 280px;
-    object-fit: contain;
-    transition: 0.4s ease;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .product-card h3 {
@@ -148,7 +157,8 @@ body {
 }
 
 .s-1 {
-    background-color: #cd6183;
+    background-color: #caca8e;
+
     position: relative;
     text-align: center;
     color: white;
